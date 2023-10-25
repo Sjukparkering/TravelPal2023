@@ -1,0 +1,64 @@
+﻿<Window x:Class="TravelPal2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelPal2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ManKanTroEnTreÅringRitat.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions> 
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+            
+            
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <Label Content=" TravelPal " Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" FontSize="50" HorizontalAlignment="Left" FontWeight="UltraBold" FontFamily="Arial" Background="MediumSlateBlue" Foreground="MintCream"/>
+        <TextBlock  Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="9"  Text="Username:" FontSize="22" HorizontalAlignment="center" FontWeight="DemiBold"  FontFamily="Bahnschrift SemiLight SemiCondensed"/>
+        <TextBlock  Grid.Row="7" Grid.Column="6" Grid.ColumnSpan="9" Text="Password:" FontSize="22" HorizontalAlignment="Center" FontWeight="DemiBold" FontFamily="Bahnschrift SemiLight SemiCondensed"/>
+        <TextBlock  Grid.Row="8" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4" Text="   Not registered yet?" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold" FontFamily="Bahnschrift SemiLight SemiCondensed"/>
+        <TextBox Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="4" FontSize="20" Background="{x:Null}" BorderBrush="Black" BorderThickness="2" />
+        <PasswordBox Grid.Row="8" Grid.Column="7" Grid.ColumnSpan="4" FontSize="20" Background="{x:Null}" BorderBrush="Black" BorderThickness="2"/>
+        <Button Name="BtnReg" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" FontSize="20" Content="    Register" Background="{x:Null}" HorizontalContentAlignment="Left" FontWeight="ExtraBold" Foreground="MintCream" BorderBrush="{x:Null}" BorderThickness="0" FontFamily="MV BOLI" Click="BtnReg_Click"/>
+        <Button Name="BtnLogIn" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" FontSize="20" Content="Login" Background="{x:Null}" HorizontalContentAlignment="Center" FontWeight="ExtraBold" Foreground="MintCream" BorderBrush="{x:Null}" BorderThickness="0" FontFamily="MV BOLI"/>
+        
+
+
+
+
+
+    </Grid>
+</Window>
