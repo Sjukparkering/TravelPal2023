@@ -8,8 +8,10 @@ namespace TravelPal2023
 {
     public interface IUser
     {
-        public string username { get; set; }
-        public string password { get; set; }
-        public Country country { get; set; }
+     //Lägg till properties
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public Country Location { get; set; }
     }
+   
 }

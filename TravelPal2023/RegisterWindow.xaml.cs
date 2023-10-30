@@ -31,5 +31,53 @@ namespace TravelPal2023
         {
 
         }
+
+        private void RegBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameReg.Text;
+            string password = PasswordReg.Password;
+             
+
+            //Kolla så användarnamet är ledigt
+            //Om inte, skicka varningsmeddelande
+            //Kolla så användaren har skrivit in något in textboxarna
+
+
+            //Spara och skapa användaren så den kan logga in
+
+
+            if (username == null || password == null || cmbCountry.SelectedIndex <= -1)
+            {
+                //Skicka varningsmeddelande
+                MessageBox.Show("Please fill in all required fields");
+            }
+            else
+            {
+                //Spara värderna
+                Country selectedCountry = (Country)cmbCountry.SelectedItem;
+
+                bool addUserResult = UserManager.AddUser(new User(username, password, selectedCountry));
+
+                if(addUserResult)
+                {
+                    // Det gick att lägga till en ny användare
+                    MessageBox.Show("A new user was registered");
+
+                    MainWindow mainWindow = new();
+                    mainWindow.Show();
+                    Close();
+                }
+                else
+                {
+                    // Användarnamnet var upptaget
+                    MessageBox.Show("Failed to register a new user. The username might already be taken.");
+                }
+            }
+
+           
+            
+        } 
+
+
     }
 }

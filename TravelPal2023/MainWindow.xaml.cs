@@ -31,5 +31,28 @@ namespace TravelPal2023
             registerWindow.Show(); 
             this.Close();
         }
+
+        private void BtnLogIn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                bool userLoggedIn = UserManager.SignInUser(UserNameBox.Text, PasswordBox.Password);
+
+                if (!userLoggedIn)
+                {
+                    MessageBox.Show("Wrong username or password");
+                }
+                else
+                {
+                    TravelsWindow travelsWindow = new TravelsWindow();
+                    travelsWindow.Show();
+                    this.Close();
+                }
+            }
+            catch (NotImplementedException)
+            {
+                
+            }
+        }
     }
 }
