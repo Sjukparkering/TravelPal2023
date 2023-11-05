@@ -14,18 +14,24 @@ using System.Windows.Shapes;
 
 namespace TravelPal2023
 {
-    /// <summary>
-    /// Interaction logic for AddTravel.xaml
-    /// </summary>
-    public partial class AddTravel : Window
+    
+    public partial class InfoTravelPal : Window
     {
-        public AddTravel()
+        public InfoTravelPal()
         {
             InitializeComponent();
 
-            TravelFrom.ItemsSource = Enum.GetValues(typeof(Country));
+            
+           
+            
+        }
 
-            SelectedCountry.ItemsSource = Enum.GetValues(typeof(Country));
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            TravelsWindow travelsWindow = new TravelsWindow();
+            this.Close();
+            travelsWindow.Show();
         }
     }
 }

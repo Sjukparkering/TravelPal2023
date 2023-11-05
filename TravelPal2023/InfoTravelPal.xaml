@@ -1,0 +1,50 @@
+﻿<Window x:Class="TravelPal2023.InfoTravelPal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelPal2023"
+        mc:Ignorable="d"
+        Title="InfoTravelPal" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Background="black" Margin="4" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <TextBlock Text="    Welcome to TravelPal, your trusted travel partner that will take you on an extraordinary journey around the world!" FontWeight="Bold" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="9" Background="MediumSlateBlue" Margin="5" FontSize="14" />
+        <TextBlock Text="         Whether you´re an around-the-world explorer or a business traveler, TravelPal has the solution for you.      " FontWeight="Bold" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="9" Background="MediumSlateBlue" Margin="5" FontSize="14" />
+        <TextBlock Text= "Work Trips?" Foreground="Bisque" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Grid.Row="4" Grid.Column="0"  Background="MediumSlateBlue" Margin="5" FontSize="20" FontWeight="ExtraBlack" />
+        <TextBlock Text= "Vacation Getaways?" Foreground="YellowGreen" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Grid.Row="4" Grid.Column="3"  Background="MediumSlateBlue" Margin="5" FontSize="20" FontWeight="ExtraBlack"/>
+        <TextBlock Text="About TravelPal" FontSize="40" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Foreground="MintCream" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Bahnschrift SemiLight SemiCondensed"/>
+        <TextBlock Text= "Travel for business in style and comfort" Foreground="Bisque" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"  Grid.Row="5" Grid.Column="0"  Background="MediumSlateBlue" Margin="5" FontSize="13"   />
+        <TextBlock Text= "Discover exotic destinations, embrace local culture" Foreground="YellowGreen"  FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"  Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Background="MediumSlateBlue" Margin="5" FontSize="10.5"   />
+        <TextBlock Text="Easily book your dream trip with a few clicks. Select travel type, destination, travelers, and preferences using our user-friendly platform" Foreground="RosyBrown" FontWeight="Bold" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="9" Background="MediumSlateBlue" Margin="5" FontSize="12" HorizontalAlignment="Center" />
+        <TextBlock Text=" Why TravelPal? " FontWeight="Bold" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Foreground="RosyBrown" Background="MediumSlateBlue" Margin="5" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Tailor your journey, benefit from local insights, explore globally, enjoy all-inclusive packages, and receive 24/7 personalized support." Foreground="RosyBrown" FontWeight="Bold" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3"  Background="MediumSlateBlue" Margin="5" FontSize="12" HorizontalAlignment="Center" />
+        <Button Name="btnBackX" Content="X" Grid.Column="3" Margin="10" Width="50" HorizontalAlignment="Right" Background="DarkRed" Click="Button_Click" BorderBrush="White" BorderThickness="2" FontWeight="ExtraBlack" FontSize="12" VerticalAlignment="Center"/>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

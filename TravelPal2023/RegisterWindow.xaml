@@ -34,7 +34,7 @@
         <Button  Name="RegBtn" Content="Register" FontSize="20" FontWeight="Bold" BorderBrush="Black" BorderThickness="5" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Height="40" Width="150" HorizontalAlignment="Right" Margin="20" Background="MediumSpringGreen" FontFamily="Bahnschrift SemiLight SemiCondensed" Click="RegBtn_Click" />
         <TextBlock Text="Country of residence" Grid.Row="3" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20" FontFamily="Bahnschrift SemiLight SemiCondensed" FontWeight="ExtraBold" Foreground="MintCream" />
         <ComboBox Name="cmbCountry"  Grid.Row="4" Grid.Column="0" Margin="20" Height="60" SelectionChanged="Country_SelectionChanged" FontSize="20"  />
-
+        <Button Name="btnGoBack" Content="Go back" Grid.Row="0" Grid.Column="0" Height="40" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Background="DarkRed" FontWeight="Black" BorderBrush="MediumSlateBlue" BorderThickness="2" Click="btnGoBack_Click" FontSize="15"/>
 
 
 

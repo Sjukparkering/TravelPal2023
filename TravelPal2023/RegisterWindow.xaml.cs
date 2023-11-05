@@ -38,12 +38,7 @@ namespace TravelPal2023
             string password = PasswordReg.Password;
              
 
-            //Kolla så användarnamet är ledigt
-            //Om inte, skicka varningsmeddelande
-            //Kolla så användaren har skrivit in något in textboxarna
-
-
-            //Spara och skapa användaren så den kan logga in
+            
 
 
             if (username == null || password == null || cmbCountry.SelectedIndex <= -1)
@@ -76,8 +71,13 @@ namespace TravelPal2023
 
            
             
-        } 
+        }
 
-
+        private void btnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

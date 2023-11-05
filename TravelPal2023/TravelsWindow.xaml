@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="TravelsWindow" Height="450" Width="800">
     <Grid>
+
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0.282"/>
@@ -42,10 +43,19 @@
            
         </Grid.ColumnDefinitions>
 
+        <TextBlock Text="Your trips" Grid.Row="2" Grid.Column="4" Foreground="LightGoldenrodYellow" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontWeight="DemiBold" FontFamily="Bahnschrift SemiLight SemiCondensed"/>
+        <TextBlock Text="(choose your trip and press the 'Details' button to show more information about the trip)" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" FontSize="7.5" FontWeight="Bold" Foreground="White" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
         <Label Content=" TravelPal " Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" FontSize="50" HorizontalAlignment="Left" FontWeight="UltraBold" FontFamily="Arial" Background="MediumSlateBlue" Foreground="MintCream" />
-        <ListView Name="AddedTravels" Grid.Row="1" Grid.Column="3" Grid.RowSpan="10" Grid.ColumnSpan="3" />
-        <Button Name="AddTravel" Content="Add Travel" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="1" />
+        <ListView Name="AddedTravels" Grid.Row="3" Grid.Column="3" Grid.RowSpan="9" Grid.ColumnSpan="3" Margin="10" FontFamily="Mv boli" FontSize="20" Background="Black" BorderBrush="MintCream" BorderThickness="3" Foreground="MintCream"/>
+        <Button Background="green" Name="AddTravel" Content="Add Travel" BorderBrush="black" BorderThickness="2" FontWeight="ExtraBlack"  Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="1" Click="AddTravel_Click" />
+        <TextBlock Text="Logged in user:"  FontSize="15" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="1" HorizontalAlignment="Center"  Foreground="MintCream" FontFamily="Bahnschrift SemiLight SemiCondensed" FontWeight="DemiBold" VerticalAlignment="center"/>
+        <Label x:Name="UsernameLabel"  FontSize="15" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2"   Foreground="MintCream" FontFamily="Bahnschrift SemiLight SemiCondensed" FontWeight="DemiBold" VerticalAlignment="center" HorizontalAlignment="Left"/>
+        <Button Content="Details" Name="BtnDetails" Background="black" Foreground="white" BorderBrush="MintCream" BorderThickness="2" FontWeight="ExtraBlack" Grid.Row="4" Grid.Column="1" Click="BtnDetails_Click"/>
+        <Button Content="About TravelPal" Name="BtnInfo" Background="DodgerBlue" BorderBrush="black" BorderThickness="2" FontWeight="ExtraBlack" Grid.Row="6" Grid.Column="1" Click="BtnInfo_Click"/>
+        <Button Content="Remove travel" Name="BtnRemove" Background="DarkRed" BorderBrush="black" BorderThickness="2" FontWeight="ExtraBlack"  Grid.Row="8" Grid.Column="1" Click="BtnRemove_Click"/>
+        <Button Content="Log Out" Name="BtnLogOut" BorderBrush="black" BorderThickness="2" FontWeight="ExtraBlack"  Grid.Row="11" Grid.Column="7" Margin="5" Click="BtnLogOut_Click"/>
         
+
 
     </Grid>
 </Window>

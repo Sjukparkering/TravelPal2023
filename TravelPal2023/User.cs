@@ -12,7 +12,7 @@ namespace TravelPal2023
         public string Password { get; set; }
         public Country Location { get; set; }
 
-        public List<Travel> Travels { get; set; }
+        public List<Travel> Travels { get; set; } = new();
 
         public User(string username, string password, Country country)
         {

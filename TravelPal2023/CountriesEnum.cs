@@ -261,34 +261,5 @@ namespace TravelPal2023
 
     }
 
-    public enum ResidenceCountry
-    {
-        Albania,        
-        Austria,
-        Belgium,
-        Bosnia_and_Herzegovina,
-        Bulgaria,
-        Croatia,
-        Cyprus,
-        Czech_Republic,
-        Estonia,
-        Finland,
-        France,
-        Germany,
-        Greece,    
-        Iceland,
-        Italy, 
-        Malta,       
-        Monaco,
-        Montenegro,
-        Netherlands,
-        Poland,
-        Portugal,
-        Romania, 
-        Serbia,    
-        Spain,
-      
-        
-
-    }
+    
 }

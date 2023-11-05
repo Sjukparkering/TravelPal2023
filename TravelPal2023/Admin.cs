@@ -8,7 +8,6 @@ namespace TravelPal2023
 {
     public class Admin : IUser 
     {
-       //Ta propertieserna från IUser och lägg in i Admin
         public string Username { get; set; }
         public string Password { get; set; }
         public Country Location { get; set; }
